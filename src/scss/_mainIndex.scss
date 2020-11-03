@@ -1,34 +1,40 @@
 .menuLateral {
-    float: left;
-
     padding: 12px 12px;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
+    background-color: $black;
+    width: 200px;
     position: fixed;
-    background-color: $white;
-    
-    width: 400px;
+    border-radius: 0px 5px 5px 0px;
 
-    border: .3rem solid $darkBlue;
-    border-left: 0px;
-
+    -webkit-box-shadow: -4px 0px 50px -7px #000000; 
+    box-shadow: -4px 0px 50px -7px #000000;
     p {
         font-size: 30px;
-        color: $darkBlue;
+        color: $white;
         font-weight: 500;
+        margin-bottom: 2px;
     }
-
+    
     nav {
         ul {
             .navMarcas {
-                color: $black;
+                color: $darkGray;
                 font-size: 25px;
                 transition: color;
                 transition-delay: .1s;
                 transition-duration: .2s;
+                
 
                 a {
                     text-decoration: none;
-                    color: $black;
+                    color: $white;
+
+                    transition: color;
+                    transition-delay: .1s;
+                    transition-duration: .2s;
+                    &:hover{
+                        color: $darkGray;
+                    }
                 }
 
                 .navNike {
@@ -37,7 +43,7 @@
                     a {
                         text-decoration: none;
                         list-style: none;
-                        color: $black;
+                        color: $white;
                         font-size: 18px;
                         margin-left: 8%;
                         transition: color;
@@ -46,7 +52,7 @@
 
 
                         &:hover {
-                            color: $darkBlue;
+                            color: $darkGray;
                         }
 
                     }
@@ -55,3 +61,156 @@
         }
     }
 }
+
+.gridProdutos{
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: 360px 400px 400px;
+    margin-left: 520px;
+    margin-top: 8rem; 
+
+    
+    .teste{
+        height: 340px;
+        background: url('../images/stefanJanoski.jpg');
+        background-position: center;
+        background-size: 320px 320px;
+        background-repeat: no-repeat;
+
+        border-radius: 10px 10px 10px 10px;
+
+        &:nth-child(2){
+            margin-left: 40px;
+    }
+        &:nth-child(3){
+            margin-left: 40px;
+    }
+        &:nth-child(4){
+            margin-top: 40px;
+        }
+        &:nth-child(5){
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        &:nth-child(6){
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        &:nth-child(7){
+            margin-top: 40px;
+        }
+        &:nth-child(8){
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        &:nth-child(9){
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .preco{
+            border: none;
+            border-radius: 10px 0px 10px 0px;
+            overflow: hidden;
+
+            padding: 2px 8px;
+            width: 20%;
+            height: 40px;
+            line-height: 40px;
+
+            font-size: 20px;
+
+            background: $gray;
+
+            font-family: $nunito;
+
+            transition: width;
+            transition-duration: .7s;
+
+            &:hover{
+                width: 48%;
+                border-radius: 10px 0px 10px 0px;
+            }
+        }
+        
+        .nomeTenis{
+            text-align: center;
+
+            border: none;
+            border-radius: 10px 10px 0px 0px;
+            
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+
+            background: $gray;
+
+            font-family: $nunito;
+            font-weight: 600;
+            font-size: 15px;
+
+            margin-top: 58.5%;
+
+        }
+        #addCarrinho{
+            text-align: center;
+
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+
+            width: 100%;
+            
+            height: 50px;
+            line-height: 50px;
+
+            background: $gray;
+            font-family: $nunito;
+            font-weight: 600;
+            font-size: 20px;
+
+            transition: background;
+            transition-delay: .1s;
+            transition-duration: .2s;
+
+
+            &:hover {
+                background: $darkGray;
+            }
+        }
+    }   
+ }
+//mediaquerys
+
+@media(max-width: 1780px){
+
+    .menuLateral {
+        padding: 13px 13px;
+        margin-top: 8rem;
+        width: 300px;
+    
+    
+        p {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    
+        nav {
+            ul {
+                .navMarcas {
+                    font-size: 22px;
+    
+                    a {
+                    }
+    
+                    .navNike {
+                       
+    
+                        a {
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
