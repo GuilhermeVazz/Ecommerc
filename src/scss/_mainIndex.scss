@@ -2,19 +2,20 @@
     padding: 12px 12px;
     margin-top: 4rem;
     background-color: $black;
-    width: 200px;
+    width: 00px;
     position: fixed;
     border-radius: 0px 5px 5px 0px;
 
-    -webkit-box-shadow: -4px 0px 50px -7px #000000; 
+    -webkit-box-shadow: -4px 0px 50px -7px #000000;
     box-shadow: -4px 0px 50px -7px #000000;
+
     p {
         font-size: 30px;
         color: $white;
         font-weight: 500;
         margin-bottom: 2px;
     }
-    
+
     nav {
         ul {
             .navMarcas {
@@ -23,7 +24,7 @@
                 transition: color;
                 transition-delay: .1s;
                 transition-duration: .2s;
-                
+
 
                 a {
                     text-decoration: none;
@@ -32,13 +33,14 @@
                     transition: color;
                     transition-delay: .1s;
                     transition-duration: .2s;
-                    &:hover{
+
+                    &:hover {
                         color: $darkGray;
                     }
                 }
 
                 .navNike {
-                   
+
 
                     a {
                         text-decoration: none;
@@ -62,15 +64,15 @@
     }
 }
 
-.gridProdutos{
+.gridProdutos {
     display: grid;
     display: inline-grid;
     grid-template-columns: 360px 400px 400px;
     margin-left: 520px;
-    margin-top: 8rem; 
+    margin-top: 8rem;
 
-    
-    .teste{
+
+    .tenis {
         height: 340px;
         background: url('../images/stefanJanoski.jpg');
         background-position: center;
@@ -79,41 +81,81 @@
 
         border-radius: 10px 10px 10px 10px;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             margin-left: 40px;
-    }
-        &:nth-child(3){
+            background: url('../images/airForce1.png');
+            background-position: center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(3) {
             margin-left: 40px;
-    }
-        &:nth-child(4){
-            margin-top: 40px;
+            background: url('../images/jordan1.png');
+            background-position: center;
+            background-size: 320px 280px;
+            background-repeat: no-repeat;
         }
-        &:nth-child(5){
+
+        &:nth-child(4) {
+            margin-top: 40px;
+            background: url('../images/busenitz1.png');
+            background-position: center;
+            background-size: 280px 220px;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(5) {
             margin-left: 40px;
             margin-top: 40px;
+            background: url('../images/nmdR1.png');
+            background-position: center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
         }
-        &:nth-child(6){
+
+        &:nth-child(6) {
             margin-left: 40px;
             margin-top: 40px;
+            background: url('../images/adidasSuperStar.png');
+            background-position: center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
         }
-        &:nth-child(7){
+
+        &:nth-child(7) {
             margin-top: 40px;
+            background: url('../images/pumaSuede.jpg');
+            background-position: center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
         }
-        &:nth-child(8){
+
+        &:nth-child(8) {
             margin-left: 40px;
             margin-top: 40px;
+            background: url('../images/pumaLQDCELL.png');
+            background-position: center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
         }
-        &:nth-child(9){
+
+        &:nth-child(9) {
             margin-left: 40px;
             margin-top: 40px;
+            background: url('../images/pumaRS-X-Reinvention.png');
+            background-position: top center;
+            background-size: 320px 320px;
+            background-repeat: no-repeat;
         }
-        .preco{
+
+        .preco {
             border: none;
-            border-radius: 10px 0px 10px 0px;
+            border-radius: 10px 10px 10px 10px;
             overflow: hidden;
 
             padding: 2px 8px;
-            width: 20%;
+            width: 18%;
             height: 40px;
             line-height: 40px;
 
@@ -126,18 +168,18 @@
             transition: width;
             transition-duration: .7s;
 
-            &:hover{
-                width: 48%;
-                border-radius: 10px 0px 10px 0px;
+            &:hover {
+                width: 46%;
+                border-radius: 10px 10px 10px 10px;
             }
         }
-        
-        .nomeTenis{
+
+        .nomeTenis {
             text-align: center;
 
             border: none;
             border-radius: 10px 10px 0px 0px;
-            
+
             width: 100%;
             height: 40px;
             line-height: 40px;
@@ -151,14 +193,15 @@
             margin-top: 58.5%;
 
         }
-        #addCarrinho{
+
+        #addCarrinho {
             text-align: center;
 
             border: none;
             border-radius: 0px 0px 10px 10px;
 
             width: 100%;
-            
+
             height: 50px;
             line-height: 50px;
 
@@ -176,41 +219,70 @@
                 background: $darkGray;
             }
         }
-    }   
- }
+    }
+}
+
 //mediaquerys
 
-@media(max-width: 1780px){
+@media(max-width: 1780px) {
 
     .menuLateral {
         padding: 13px 13px;
         margin-top: 8rem;
         width: 300px;
-    
-    
+
+
         p {
             font-size: 24px;
             font-weight: 500;
         }
-    
+
         nav {
             ul {
                 .navMarcas {
                     font-size: 22px;
-    
-                    a {
-                    }
-    
+
+                    a {}
+
                     .navNike {
-                       
-    
-                        a {
-                            }
-    
-                        }
+
+
+                        a {}
+
                     }
                 }
             }
         }
     }
+}
 
+@media(max-width: 1900px) {
+    .menuLateral {
+        padding: 13px 13px;
+        margin-top: 8rem;
+        width: 300px;
+
+
+        p {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        nav {
+            ul {
+                .navMarcas {
+                    font-size: 22px;
+
+                    a {}
+
+                    .navNike {
+
+
+                        a {}
+
+                    }
+                }
+            }
+        }
+    }
+}

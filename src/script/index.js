@@ -1,6 +1,6 @@
 var name
 
-function pegarValor(){
+function pegarId(){
     name = document.getElementById("addCarrinho").name
     console.log(name)
 
