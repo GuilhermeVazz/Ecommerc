@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, html, body {
+  font-family: "Nunito", sans-serif;
+}
+
+.menuIndex {
+  background-color: #407294;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.menuIndex nav {
+  width: 100%;
+}
+
+.menuIndex nav ul li {
+  display: inline;
+  justify-items: center;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  margin-left: 2%;
+}
+
+.menuIndex nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuIndex nav ul li a:hover {
+  color: #FFFFFF;
+}
+
+.menuLateral {
+  float: left;
+  padding: 12px 12px;
+  margin-top: 1.5rem;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 400px;
+  border: 0.3rem solid #407294;
+  border-left: 0px;
+}
+
+.menuLateral p {
+  font-size: 30px;
+  color: #407294;
+  font-weight: 500;
+}
+
+.menuLateral nav ul .navMarcas {
+  color: #000000;
+  font-size: 25px;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuLateral nav ul .navMarcas a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menuLateral nav ul .navMarcas .navNike a {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  font-size: 18px;
+  margin-left: 8%;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuLateral nav ul .navMarcas .navNike a:hover {
+  color: #407294;
+}
+/*# sourceMappingURL=main.css.map */

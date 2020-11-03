@@ -1,0 +1,57 @@
+.menuLateral {
+    float: left;
+
+    padding: 12px 12px;
+    margin-top: 1.5rem;
+    position: fixed;
+    background-color: $white;
+    
+    width: 400px;
+
+    border: .3rem solid $darkBlue;
+    border-left: 0px;
+
+    p {
+        font-size: 30px;
+        color: $darkBlue;
+        font-weight: 500;
+    }
+
+    nav {
+        ul {
+            .navMarcas {
+                color: $black;
+                font-size: 25px;
+                transition: color;
+                transition-delay: .1s;
+                transition-duration: .2s;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+
+                .navNike {
+                   
+
+                    a {
+                        text-decoration: none;
+                        list-style: none;
+                        color: $black;
+                        font-size: 18px;
+                        margin-left: 8%;
+                        transition: color;
+                        transition-delay: .1s;
+                        transition-duration: .2s;
+
+
+                        &:hover {
+                            color: $darkBlue;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
