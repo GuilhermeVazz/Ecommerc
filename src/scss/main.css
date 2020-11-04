@@ -90,7 +90,7 @@ body {
   padding: 12px 12px;
   margin-top: 4rem;
   background-color: #000000;
-  width: 00px;
+  width: 600px;
   position: fixed;
   border-radius: 0px 5px 5px 0px;
   -webkit-box-shadow: -4px 0px 50px -7px #000000;
@@ -272,7 +272,7 @@ body {
   margin-top: 58.5%;
 }
 
-.gridProdutos .tenis #addCarrinho {
+.gridProdutos .tenis .addCarrinho {
   text-align: center;
   border: none;
   border-radius: 0px 0px 10px 10px;
@@ -291,7 +291,7 @@ body {
           transition-duration: .2s;
 }
 
-.gridProdutos .tenis #addCarrinho:hover {
+.gridProdutos .tenis .addCarrinho:hover {
   background: #bfbfbf;
 }
 
@@ -307,6 +307,9 @@ body {
   }
   .menuLateral nav ul .navMarcas {
     font-size: 22px;
+  }
+  .gridProdutos {
+    margin-left: 435px;
   }
 }
 

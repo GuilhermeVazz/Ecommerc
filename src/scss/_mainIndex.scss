@@ -2,7 +2,7 @@
     padding: 12px 12px;
     margin-top: 4rem;
     background-color: $black;
-    width: 00px;
+    width: 600px;
     position: fixed;
     border-radius: 0px 5px 5px 0px;
 
@@ -194,7 +194,7 @@
 
         }
 
-        #addCarrinho {
+        .addCarrinho {
             text-align: center;
 
             border: none;
@@ -222,67 +222,3 @@
     }
 }
 
-//mediaquerys
-
-@media(max-width: 1780px) {
-
-    .menuLateral {
-        padding: 13px 13px;
-        margin-top: 8rem;
-        width: 300px;
-
-
-        p {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        nav {
-            ul {
-                .navMarcas {
-                    font-size: 22px;
-
-                    a {}
-
-                    .navNike {
-
-
-                        a {}
-
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 1900px) {
-    .menuLateral {
-        padding: 13px 13px;
-        margin-top: 8rem;
-        width: 300px;
-
-
-        p {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        nav {
-            ul {
-                .navMarcas {
-                    font-size: 22px;
-
-                    a {}
-
-                    .navNike {
-
-
-                        a {}
-
-                    }
-                }
-            }
-        }
-    }
-}
