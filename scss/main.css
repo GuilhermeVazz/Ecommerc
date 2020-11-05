@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, html, body {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 149.2vh;
+}
+
+.headerIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: space-between;
+}
+
+.headerIndex .menuIndex {
+  background-color: #000000;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.headerIndex .menuIndex nav {
+  width: 100%;
+}
+
+.headerIndex .menuIndex nav ul li {
+  display: inline;
+  justify-items: center;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  margin-left: 2%;
+}
+
+.headerIndex .menuIndex nav ul li a {
+  text-decoration: none;
+  color: #c7c7c7;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.headerIndex .menuIndex nav ul li a:hover {
+  color: #FFFFFF;
+}
+
+.headerIndex .carrinhoCompras {
+  position: absolute;
+  margin-left: 91%;
+}
+
+.headerIndex .carrinhoCompras button {
+  position: fixed;
+  background: none;
+  border: none;
+  text-align: center;
+  outline: none;
+  width: 80px;
+  height: 80px;
+}
+
+.headerIndex .carrinhoCompras button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.headerIndex .carrinhoCompras button img {
+  padding: 4px 4px;
+  margin-top: 2px;
+  width: 60px;
+  height: 60px;
+}
+
+.menuLateral {
+  padding: 12px 12px;
+  margin-top: 4rem;
+  background-color: #000000;
+  width: 600px;
+  position: fixed;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-box-shadow: -4px 0px 50px -7px #000000;
+  box-shadow: -4px 0px 50px -7px #000000;
+}
+
+.menuLateral p {
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.menuLateral nav ul .navMarcas {
+  color: #bfbfbf;
+  font-size: 25px;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuLateral nav ul .navMarcas a {
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuLateral nav ul .navMarcas a:hover {
+  color: #bfbfbf;
+}
+
+.menuLateral nav ul .navMarcas .navNike a {
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-left: 8%;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.menuLateral nav ul .navMarcas .navNike a:hover {
+  color: #bfbfbf;
+}
+
+.gridProdutos {
+  display: -ms-grid;
+  display: grid;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 360px 400px 400px;
+      grid-template-columns: 360px 400px 400px;
+  margin-left: 520px;
+  margin-top: 8rem;
+}
+
+.gridProdutos .tenis {
+  height: 340px;
+  background: url("../images/stefanJanoski.jpg");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.gridProdutos .tenis:nth-child(2) {
+  margin-left: 40px;
+  background: url("../images/airForce1.png");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(3) {
+  margin-left: 40px;
+  background: url("../images/jordan1.png");
+  background-position: center;
+  background-size: 320px 280px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(4) {
+  margin-top: 40px;
+  background: url("../images/busenitz1.png");
+  background-position: center;
+  background-size: 280px 220px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(5) {
+  margin-left: 40px;
+  margin-top: 40px;
+  background: url("../images/nmdR1.png");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(6) {
+  margin-left: 40px;
+  margin-top: 40px;
+  background: url("../images/adidasSuperStar.png");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(7) {
+  margin-top: 40px;
+  background: url("../images/pumaSuede.jpg");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(8) {
+  margin-left: 40px;
+  margin-top: 40px;
+  background: url("../images/pumaLQDCELL.png");
+  background-position: center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis:nth-child(9) {
+  margin-left: 40px;
+  margin-top: 40px;
+  background: url("../images/pumaRS-X-Reinvention.png");
+  background-position: top center;
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+}
+
+.gridProdutos .tenis .preco {
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  padding: 2px 8px;
+  width: 18%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  background: #e3e3e3;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: width;
+  transition: width;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.gridProdutos .tenis .preco:hover {
+  width: 46%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.gridProdutos .tenis .nomeTenis {
+  text-align: center;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #e3e3e3;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 58.5%;
+}
+
+.gridProdutos .tenis .addCarrinho {
+  text-align: center;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #e3e3e3;
+  -webkit-transition: background;
+  transition: background;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.gridProdutos .tenis .addCarrinho:hover {
+  background: #bfbfbf;
+}
+
+.gridProdutos .tenis .addCarrinho a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body {
+  height: 120vh;
+}
+
+.gridPaginaProd {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.gridPaginaProd #nomeDoProduto {
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-size: 80px;
+  margin-bottom: -14%;
+}
+
+.gridPaginaProd #exibirTenis {
+  width: 800px;
+  height: 800px;
+  margin-left: -2%;
+  border-radius: .2rem;
+}
+
+.gridPaginaProd #coresTenis {
+  position: absolute;
+  margin-top: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50rem;
+}
+
+.gridPaginaProd #coresTenis button {
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ff0000;
+  outline: none;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(1):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(2) {
+  background-color: #5bb9fa;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(2):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(3) {
+  background-color: #000000;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(3):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(4) {
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  color: #000000;
+  margin-left: 0;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(4):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+@-webkit-keyframes expandir {
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes expandir {
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@media (max-width: 1780px) {
+  .menuLateral {
+    padding: 13px 13px;
+    margin-top: 8rem;
+    width: 300px;
+  }
+  .menuLateral p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .menuLateral nav ul .navMarcas {
+    font-size: 22px;
+  }
+  .gridProdutos {
+    margin-left: 435px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .menuLateral {
+    padding: 13px 13px;
+    margin-top: 8rem;
+    width: 300px;
+  }
+  .menuLateral p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .menuLateral nav ul .navMarcas {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
