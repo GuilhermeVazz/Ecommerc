@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/scss/main.css" />
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Nunito:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerIndex">
+        <div class="menuIndex">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="carrinhoCompras">
+            <button><img src="./src/images/carrinhoCompras.png"></button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="gridPaginaProd">
+            <div id="nomeDoProduto">
+                Stefan Janoski
+            </div>
+            <img id="exibirTenis" src="./src/images/stefanJanoski.jpg">
+
+            <div id="coresTenis">
+
+                <button value="vermelho" onclick="pegarCor(this.value)"></button>
+                <button value="azul" onclick="pegarCor(this.value)"></button>
+                <button value="preto" onclick="pegarCor(this.value)"></button>
+                <button value="branco" onclick="pegarCor(this.value)"></button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./src/script/paginaProd.js"></script>
+    <script src="./src/script/listaTenis.js"></script>
+</body>
+
+</html>

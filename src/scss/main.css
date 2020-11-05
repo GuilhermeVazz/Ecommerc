@@ -25,6 +25,7 @@ body {
   width: 100%;
   height: 80px;
   position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +68,7 @@ body {
 }
 
 .headerIndex .carrinhoCompras button {
+  position: fixed;
   background: none;
   border: none;
   text-align: center;
@@ -280,9 +282,6 @@ body {
   height: 50px;
   line-height: 50px;
   background: #e3e3e3;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
   -webkit-transition: background;
   transition: background;
   -webkit-transition-delay: .1s;
@@ -293,6 +292,122 @@ body {
 
 .gridProdutos .tenis .addCarrinho:hover {
   background: #bfbfbf;
+}
+
+.gridProdutos .tenis .addCarrinho a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body {
+  height: 120vh;
+}
+
+.gridPaginaProd {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.gridPaginaProd #nomeDoProduto {
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-size: 80px;
+  margin-bottom: -14%;
+}
+
+.gridPaginaProd #exibirTenis {
+  width: 800px;
+  height: 800px;
+  margin-left: -2%;
+  border-radius: .2rem;
+}
+
+.gridPaginaProd #coresTenis {
+  position: absolute;
+  margin-top: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50rem;
+}
+
+.gridPaginaProd #coresTenis button {
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ff0000;
+  outline: none;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(1):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(2) {
+  background-color: #5bb9fa;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(2):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(3) {
+  background-color: #000000;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(3):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.gridPaginaProd #coresTenis button:nth-child(4) {
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  color: #000000;
+  margin-left: 0;
+}
+
+.gridPaginaProd #coresTenis button:nth-child(4):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+@-webkit-keyframes expandir {
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes expandir {
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
 }
 
 @media (max-width: 1780px) {

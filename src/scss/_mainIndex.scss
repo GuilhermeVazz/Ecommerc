@@ -206,9 +206,7 @@
             line-height: 50px;
 
             background: $gray;
-            font-family: $nunito;
-            font-weight: 600;
-            font-size: 20px;
+            
 
             transition: background;
             transition-delay: .1s;
@@ -217,6 +215,14 @@
 
             &:hover {
                 background: $darkGray;
+            }
+
+            a{
+                text-decoration: none;
+                color: $black;
+                font-family: $nunito;
+                font-weight: 600;
+                font-size: 20px;
             }
         }
     }

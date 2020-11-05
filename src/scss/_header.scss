@@ -10,6 +10,7 @@
         height: 80px;
 
         position: fixed;
+        position: absolute;
 
         display: flex;
         align-items: center;
@@ -25,7 +26,6 @@
                     font-size: 1.6rem;
                     letter-spacing: .2rem;
                     margin-left: 2%;
-
 
                     a {
                         text-decoration: none;
@@ -51,6 +51,7 @@
         margin-left: 91%;
 
         button {
+            position: fixed;
             background: none;
             border: none;
             text-align: center;
