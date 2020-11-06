@@ -49,7 +49,7 @@ body {
 
 .headerIndex .menuIndex nav ul li a {
   text-decoration: none;
-  color: #c7c7c7;
+  color: #dadada;
   -webkit-transition: color;
   transition: color;
   -webkit-transition-delay: .2s;
@@ -163,7 +163,7 @@ body {
 
 .gridProdutos .tenis {
   height: 340px;
-  background: url("../images/stefanJanoski.jpg");
+  background: url("../images/tenis/stefanJanoski/Preto/stefanJanoski.jpg");
   background-position: center;
   background-size: 320px 320px;
   background-repeat: no-repeat;
@@ -306,7 +306,49 @@ body {
   height: 120vh;
 }
 
-.gridPaginaProd {
+.menuLateralTenis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fotosTenis {
+  background-position: top center;
+  margin-top: 1%;
+  margin-left: 10%;
+  width: 150px;
+  height: 150px;
+  float: left;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.fotosTenis:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+.fotosTenis:nth-child(2) {
+  clear: both;
+}
+
+.fotosTenis:nth-child(3) {
+  clear: both;
+}
+
+.fotosTenis:nth-child(4) {
+  clear: both;
+}
+
+.PaginaProd {
   margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,23 +363,81 @@ body {
   justify-items: center;
 }
 
-.gridPaginaProd #nomeDoProduto {
+.PaginaProd #nomeDoProduto {
   position: absolute;
+  margin-left: -17%;
   font-family: "Nunito", sans-serif;
   font-size: 80px;
   margin-bottom: -14%;
 }
 
-.gridPaginaProd #exibirTenis {
-  width: 800px;
-  height: 800px;
-  margin-left: -2%;
-  border-radius: .2rem;
+.PaginaProd .numeroTenis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
 }
 
-.gridPaginaProd #coresTenis {
+.PaginaProd .numeroTenis #exibirTenis {
+  border-radius: .2rem;
+  width: 600px;
+  height: 600px;
+  margin-left: -10%;
+  margin-top: 6%;
+  margin-right: 30%;
+}
+
+.PaginaProd .numeroTenis .numeroDoTenis {
+  margin-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.PaginaProd .numeroTenis .numeroDoTenis button {
+  width: 80px;
+  height: 80px;
+  margin-top: 15.2%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background: #FFFFFF;
+  outline: none;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.PaginaProd .numeroTenis .numeroDoTenis button:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.PaginaProd .numeroTenis .numeroDoTenis button:focus {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.PaginaProd .numeroTenis .numeroDoTenis .chooseSize {
+  margin-left: -17%;
+  width: 200px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+}
+
+.PaginaProd #coresTenis {
   position: absolute;
-  margin-top: 40rem;
+  margin-top: 41rem;
+  margin-left: -19%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,12 +446,11 @@ body {
   width: 50rem;
 }
 
-.gridPaginaProd #coresTenis button {
+.PaginaProd #coresTenis button {
   border: none;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  background-color: #ff0000;
+  width: 110px;
+  height: 110px;
   outline: none;
   -webkit-transition: -webkit-transform;
   transition: -webkit-transform;
@@ -361,53 +460,53 @@ body {
           transition-duration: .4s;
 }
 
-.gridPaginaProd #coresTenis button:nth-child(1):hover {
+.PaginaProd #coresTenis button:focus {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
 
-.gridPaginaProd #coresTenis button:nth-child(2) {
-  background-color: #5bb9fa;
+.PaginaProd #coresTenis button:nth-child(1) {
+  background: url("../images/tenis/stefanJanoski/Camo/defaultJanoski.webp");
+  background-position: bottom center;
+  background-size: 140px 140px;
 }
 
-.gridPaginaProd #coresTenis button:nth-child(2):hover {
+.PaginaProd #coresTenis button:nth-child(1):hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
 
-.gridPaginaProd #coresTenis button:nth-child(3) {
-  background-color: #000000;
+.PaginaProd #coresTenis button:nth-child(2) {
+  background: url("../images/tenis/stefanJanoski/stefanJanoskiAzul.jpg");
+  background-position: center;
+  background-size: 140px 140px;
 }
 
-.gridPaginaProd #coresTenis button:nth-child(3):hover {
+.PaginaProd #coresTenis button:nth-child(2):hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
 
-.gridPaginaProd #coresTenis button:nth-child(4) {
-  border: 1px solid #000000;
-  background: #FFFFFF;
-  color: #000000;
-  margin-left: 0;
+.PaginaProd #coresTenis button:nth-child(3) {
+  background: url("../images/tenis/stefanJanoski/Preto/stefanJanoski.jpg");
+  background-position: bottom center;
+  background-size: 140px 140px;
 }
 
-.gridPaginaProd #coresTenis button:nth-child(4):hover {
+.PaginaProd #coresTenis button:nth-child(3):hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
 
-@-webkit-keyframes expandir {
-  100% {
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
-  }
+.PaginaProd #coresTenis button:nth-child(4) {
+  background: url("../images/tenis/stefanJanoski/stefanJanoskiBranco.jpg");
+  background-position: center;
+  background-size: 140px 140px;
 }
 
-@keyframes expandir {
-  100% {
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
-  }
+.PaginaProd #coresTenis button:nth-child(4):hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
 
 @media (max-width: 1780px) {

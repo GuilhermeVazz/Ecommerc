@@ -31,16 +31,33 @@
     </header>
 
     <main>
+        <div id="menuLateralFotos">
+            <img class="fotosTenis" id="sola" onclick="alterarImagePrincipal(this.id)" src="./src/images/tenis/stefanJanoski/Preto/solaJanoski.png">
+            <img class="fotosTenis" id="parteCima" onclick="alterarImagePrincipal(this.id)" src="./src/images/tenis/stefanJanoski/Preto/partecimaJanoski.png">
+            <img class="fotosTenis" id="lateral" onclick="alterarImagePrincipal(this.id)" src="./src/images/tenis/stefanJanoski/Preto/partelateralJanoski.png">
+            <img class="fotosTenis" id="default" onclick="alterarImagePrincipal(this.id)" src="./src/images/tenis/stefanJanoski/Preto/stefanJanoski.jpg">
+        </div>
 
-        <div class="gridPaginaProd">
+        </div>
+        <div class="PaginaProd">
             <div id="nomeDoProduto">
                 Stefan Janoski
             </div>
-            <img id="exibirTenis" src="./src/images/stefanJanoski.jpg">
-
+            <div class="numeroTenis">
+                <img id="exibirTenis" src="./src/images/tenis/stefanJanoski/Preto/stefanJanoski.jpg">
+                <div class="numeroDoTenis">
+                    <span class="chooseSize">Escolha seu tamanho</span>
+                    <button>36/37</button>
+                    <button>37.5/39</button>
+                    <button>39/40</button>
+                    <button>40.5/41</button>
+                    <button>41/42</button>
+                    <button>42.5/43</button>
+                </div>
+            </div>
             <div id="coresTenis">
 
-                <button value="vermelho" onclick="pegarCor(this.value)"></button>
+                <button value="Camo" onclick="pegarCor(this.value)"></button>
                 <button value="azul" onclick="pegarCor(this.value)"></button>
                 <button value="preto" onclick="pegarCor(this.value)"></button>
                 <button value="branco" onclick="pegarCor(this.value)"></button>
@@ -57,7 +74,6 @@
     </footer>
 
     <script src="./src/script/paginaProd.js"></script>
-    <script src="./src/script/listaTenis.js"></script>
 </body>
 
 </html>
