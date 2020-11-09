@@ -21,7 +21,6 @@ body{
     &:hover{
         transform: scale(1.5, 1.5)
     }
-
     &:nth-child(2){
         clear: both;
     }
@@ -34,21 +33,21 @@ body{
 }
 .PaginaProd{
     margin-top: 8rem;
-    
+   
+    width: 80%;
+    margin-left: 10%;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
 
     #nomeDoProduto{
         position: absolute;
         
-        margin-left: -17%;
-
+        margin-left: -16.5%;
         font-family: $nunito;
         font-size: 80px;
         
-        margin-bottom: -14%;
     }
 
     .numeroTenis{
@@ -58,13 +57,11 @@ body{
         
         #exibirTenis{
         border-radius: .2rem; 
-        
+        margin-left: -4.5%;
         width: 600px;
         height: 600px;
         
-        margin-left: -10%;
-        margin-top: 6%;
-        margin-right: 30%;
+        margin-right: 32%;
         }
     .numeroDoTenis{
         margin-top: 6%;
@@ -104,8 +101,9 @@ body{
             
         }
         .chooseSize{
-            margin-left: -17%;
             width: 200px;
+
+            margin-left: -19%;
 
             font-family: $nunito;
             font-weight: bolder;
@@ -114,14 +112,13 @@ body{
         
     }
     #coresTenis{
-        position: absolute;
         
-        margin-top: 41rem;
-        margin-left: -19%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        text-align: center;
 
-        width: 50rem;
+        margin-left: -18.5%;
+        width: 50%;
             button{
             border: none;
             border-radius:50%;
@@ -180,3 +177,46 @@ body{
         }
     }
 }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        height: 5px;
+        background: $darkGray;
+        border: none;
+        border-radius: 10px;
+    }
+    #aboutProduct{
+        width: 80%;
+        
+        margin-top: 5%;
+        margin-left: 10%;
+
+        
+        img{
+            float: left;
+            margin-right: 5%;
+            height: 600px;
+        }
+
+        #tituloDescricao{
+            text-align: center;
+            font-family: $nunito;
+            font-weight: 700;
+            font-size: 50px;
+
+            letter-spacing: 5px;
+
+            
+        }
+        #descricao{
+            margin-top: 2%;
+            font-family: $nunito;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 3px;
+
+            
+        }
+    }
